@@ -1,0 +1,894 @@
+2017-10-23 22:14:00.412  INFO 79427 --- [main] c.c.c.ChangeMyPlayerApplicationTests     : Starting ChangeMyPlayerApplicationTests on Thiagos-MacBook-Pro.local with PID 79427 (started by thiagocarneiro in /Users/thiagocarneiro/Documents/programming/personal/change-my-player)
+2017-10-23 22:14:00.414  INFO 79427 --- [main] c.c.c.ChangeMyPlayerApplicationTests     : No active profile set, falling back to default profiles: default
+2017-10-23 22:14:00.716  INFO 79427 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@54422e18: startup date [Mon Oct 23 22:14:00 BRST 2017]; root of context hierarchy
+2017-10-23 22:14:01.688  INFO 79427 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-23 22:14:01.815  INFO 79427 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$fdda5677] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-23 22:14:01.893  INFO 79427 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-10-23 22:14:01.959  WARN 79427 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'spotifyController': Unsatisfied dependency expressed through field 'spotify'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spotify': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'redirect-url' in value "${redirect-url}"
+2017-10-23 22:14:01.975  INFO 79427 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-10-23 22:14:02.002 ERROR 79427 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'spotifyController': Unsatisfied dependency expressed through field 'spotify'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spotify': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'redirect-url' in value "${redirect-url}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spotify': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'redirect-url' in value "${redirect-url}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 44 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'redirect-url' in value "${redirect-url}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:831) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 55 common frames omitted
+
+2017-10-23 22:14:02.008 ERROR 79427 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@c540f5a] to prepare test instance [com.cmp.changemyplayer.ChangeMyPlayerApplicationTests@67fe380b]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'spotifyController': Unsatisfied dependency expressed through field 'spotify'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spotify': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'redirect-url' in value "${redirect-url}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spotify': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'redirect-url' in value "${redirect-url}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 44 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'redirect-url' in value "${redirect-url}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:831) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 55 common frames omitted
+
+2017-10-23 22:14:58.926  INFO 79469 --- [main] c.c.c.ChangeMyPlayerApplicationTests     : Starting ChangeMyPlayerApplicationTests on Thiagos-MacBook-Pro.local with PID 79469 (started by thiagocarneiro in /Users/thiagocarneiro/Documents/programming/personal/change-my-player)
+2017-10-23 22:14:58.928  INFO 79469 --- [main] c.c.c.ChangeMyPlayerApplicationTests     : No active profile set, falling back to default profiles: default
+2017-10-23 22:14:59.175  INFO 79469 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@54422e18: startup date [Mon Oct 23 22:14:59 BRST 2017]; root of context hierarchy
+2017-10-23 22:14:59.981  INFO 79469 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-23 22:15:00.073  INFO 79469 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$fdda5677] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-23 22:15:00.143  INFO 79469 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-10-23 22:15:00.183  WARN 79469 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'spotifyController': Unsatisfied dependency expressed through field 'spotify'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spotify': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'redirect-url' in value "${redirect-url}"
+2017-10-23 22:15:00.197  INFO 79469 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-10-23 22:15:00.205 ERROR 79469 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'spotifyController': Unsatisfied dependency expressed through field 'spotify'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spotify': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'redirect-url' in value "${redirect-url}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) [spring-boot-test-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spotify': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'redirect-url' in value "${redirect-url}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 44 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'redirect-url' in value "${redirect-url}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:831) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 55 common frames omitted
+
+2017-10-23 22:15:00.216 ERROR 79469 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@c540f5a] to prepare test instance [com.cmp.changemyplayer.ChangeMyPlayerApplicationTests@67fe380b]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'spotifyController': Unsatisfied dependency expressed through field 'spotify'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spotify': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'redirect-url' in value "${redirect-url}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) ~[spring-test-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spotify': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'redirect-url' in value "${redirect-url}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 44 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'redirect-url' in value "${redirect-url}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:831) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 55 common frames omitted
+
+2017-10-23 22:19:05.209  INFO 79580 --- [main] c.c.c.ChangeMyPlayerApplication          : Starting ChangeMyPlayerApplication on Thiagos-MacBook-Pro.local with PID 79580 (/Users/thiagocarneiro/Documents/programming/personal/change-my-player/target/classes started by thiagocarneiro in /Users/thiagocarneiro/Documents/programming/personal/change-my-player)
+2017-10-23 22:19:05.212  INFO 79580 --- [main] c.c.c.ChangeMyPlayerApplication          : No active profile set, falling back to default profiles: default
+2017-10-23 22:19:05.571  INFO 79580 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35e2d654: startup date [Mon Oct 23 22:19:05 BRST 2017]; root of context hierarchy
+2017-10-23 22:19:06.424  INFO 79580 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-23 22:19:06.514  INFO 79580 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e4e4f80c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-23 22:19:06.582  INFO 79580 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-10-23 22:19:07.188  INFO 79580 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-23 22:19:07.203  INFO 79580 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-23 22:19:07.205  INFO 79580 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-23 22:19:07.339  INFO 79580 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-23 22:19:07.340  INFO 79580 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1773 ms
+2017-10-23 22:19:07.512  INFO 79580 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-23 22:19:07.514  INFO 79580 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2017-10-23 22:19:07.518  INFO 79580 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-23 22:19:07.519  INFO 79580 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-23 22:19:07.519  INFO 79580 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-23 22:19:07.519  INFO 79580 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-23 22:19:07.601  WARN 79580 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'spotifyController': Unsatisfied dependency expressed through field 'spotify'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spotify': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'redirect-url' in value "${redirect-url}"
+2017-10-23 22:19:07.604  INFO 79580 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-10-23 22:19:07.627  INFO 79580 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-10-23 22:19:07.639 ERROR 79580 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'spotifyController': Unsatisfied dependency expressed through field 'spotify'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spotify': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'redirect-url' in value "${redirect-url}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.cmp.changemyplayer.ChangeMyPlayerApplication.main(ChangeMyPlayerApplication.java:10) [classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spotify': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'redirect-url' in value "${redirect-url}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 19 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'redirect-url' in value "${redirect-url}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:831) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 30 common frames omitted
+
+2017-10-23 22:20:57.652  INFO 79642 --- [main] c.c.c.ChangeMyPlayerApplicationTests     : Starting ChangeMyPlayerApplicationTests on Thiagos-MacBook-Pro.local with PID 79642 (started by thiagocarneiro in /Users/thiagocarneiro/Documents/programming/personal/change-my-player)
+2017-10-23 22:20:57.653  INFO 79642 --- [main] c.c.c.ChangeMyPlayerApplicationTests     : No active profile set, falling back to default profiles: default
+2017-10-23 22:20:58.014  INFO 79642 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3e27ba32: startup date [Mon Oct 23 22:20:58 BRST 2017]; root of context hierarchy
+2017-10-23 22:20:59.083  INFO 79642 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-23 22:20:59.221  INFO 79642 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$1e3e9b12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-23 22:20:59.296  INFO 79642 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-10-23 22:20:59.534  WARN 79642 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.model.spotify.Spotify contains validation constraints but had not been annotated with @Validated.
+2017-10-23 22:20:59.539  WARN 79642 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.model.spotify.Spotify contains validation constraints but had not been annotated with @Validated.
+2017-10-23 22:20:59.539  WARN 79642 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.model.spotify.Spotify contains validation constraints but had not been annotated with @Validated.
+2017-10-23 22:20:59.570  WARN 79642 --- [main] c.c.c.model.spotify.Spotify              : Id: 1d56a48289a646a788a69a44418c6768
+2017-10-23 22:20:59.570  WARN 79642 --- [main] c.c.c.model.spotify.Spotify              : Secret: 666c5bddec4f4347b15c81f6055c4684
+2017-10-23 22:20:59.570  WARN 79642 --- [main] c.c.c.model.spotify.Spotify              : Redirect Url: http://localhost:8080/
+2017-10-23 22:21:00.327  INFO 79642 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3e27ba32: startup date [Mon Oct 23 22:20:58 BRST 2017]; root of context hierarchy
+2017-10-23 22:21:00.426  INFO 79642 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spotify/auth]}" onto public java.lang.String com.cmp.changemyplayer.controller.SpotifyController.authenticate()
+2017-10-23 22:21:00.431  INFO 79642 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-23 22:21:00.432  INFO 79642 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-23 22:21:00.475  INFO 79642 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 22:21:00.476  INFO 79642 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 22:21:00.542  INFO 79642 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 22:21:00.621  WARN 79642 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-10-23 22:21:01.109  INFO 79642 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2017-10-23 22:21:01.367  INFO 79642 --- [main] c.c.c.ChangeMyPlayerApplicationTests     : Started ChangeMyPlayerApplicationTests in 14.3 seconds (JVM running for 15.43)
+2017-10-23 22:21:01.425  INFO 79642 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3e27ba32: startup date [Mon Oct 23 22:20:58 BRST 2017]; root of context hierarchy
+2017-10-23 22:21:30.306  INFO 79649 --- [main] c.c.c.ChangeMyPlayerApplication          : Starting ChangeMyPlayerApplication on Thiagos-MacBook-Pro.local with PID 79649 (/Users/thiagocarneiro/Documents/programming/personal/change-my-player/target/classes started by thiagocarneiro in /Users/thiagocarneiro/Documents/programming/personal/change-my-player)
+2017-10-23 22:21:30.308  INFO 79649 --- [main] c.c.c.ChangeMyPlayerApplication          : No active profile set, falling back to default profiles: default
+2017-10-23 22:21:30.601  INFO 79649 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35e2d654: startup date [Mon Oct 23 22:21:30 BRST 2017]; root of context hierarchy
+2017-10-23 22:21:31.406  INFO 79649 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-23 22:21:31.505  INFO 79649 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$290f1101] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-23 22:21:31.570  INFO 79649 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-10-23 22:21:32.110  INFO 79649 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-23 22:21:32.126  INFO 79649 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-23 22:21:32.128  INFO 79649 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-23 22:21:32.274  INFO 79649 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-23 22:21:32.275  INFO 79649 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1678 ms
+2017-10-23 22:21:32.485  INFO 79649 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-23 22:21:32.487  INFO 79649 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2017-10-23 22:21:32.491  INFO 79649 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-23 22:21:32.492  INFO 79649 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-23 22:21:32.492  INFO 79649 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-23 22:21:32.493  INFO 79649 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-23 22:21:32.639  WARN 79649 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.model.spotify.Spotify contains validation constraints but had not been annotated with @Validated.
+2017-10-23 22:21:32.640  WARN 79649 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.model.spotify.Spotify contains validation constraints but had not been annotated with @Validated.
+2017-10-23 22:21:32.641  WARN 79649 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.model.spotify.Spotify contains validation constraints but had not been annotated with @Validated.
+2017-10-23 22:21:32.671  WARN 79649 --- [main] c.c.c.model.spotify.Spotify              : Id: 1d56a48289a646a788a69a44418c6768
+2017-10-23 22:21:32.672  WARN 79649 --- [main] c.c.c.model.spotify.Spotify              : Secret: 666c5bddec4f4347b15c81f6055c4684
+2017-10-23 22:21:32.672  WARN 79649 --- [main] c.c.c.model.spotify.Spotify              : Redirect Url: http://localhost:8080/
+2017-10-23 22:21:33.009  INFO 79649 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35e2d654: startup date [Mon Oct 23 22:21:30 BRST 2017]; root of context hierarchy
+2017-10-23 22:21:33.093  INFO 79649 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spotify/auth]}" onto public java.lang.String com.cmp.changemyplayer.controller.SpotifyController.authenticate()
+2017-10-23 22:21:33.098  INFO 79649 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-23 22:21:33.098  INFO 79649 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-23 22:21:33.142  INFO 79649 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 22:21:33.142  INFO 79649 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 22:21:33.200  INFO 79649 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 22:21:33.256  WARN 79649 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-10-23 22:21:33.751  INFO 79649 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2017-10-23 22:21:33.962  INFO 79649 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-23 22:21:34.037  INFO 79649 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-23 22:21:34.043  INFO 79649 --- [main] c.c.c.ChangeMyPlayerApplication          : Started ChangeMyPlayerApplication in 14.13 seconds (JVM running for 19.739)
+2017-10-23 22:22:17.508  INFO 79649 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-23 22:22:17.508  INFO 79649 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-23 22:22:17.529  INFO 79649 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2017-10-23 22:32:20.862  INFO 79649 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-10-23 22:32:20.864  INFO 79649 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35e2d654: startup date [Mon Oct 23 22:21:30 BRST 2017]; root of context hierarchy
+2017-10-23 22:32:20.865  INFO 79649 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-10-23 22:32:42.460  INFO 79871 --- [main] c.c.c.ChangeMyPlayerApplication          : Starting ChangeMyPlayerApplication on Thiagos-MacBook-Pro.local with PID 79871 (/Users/thiagocarneiro/Documents/programming/personal/change-my-player/target/classes started by thiagocarneiro in /Users/thiagocarneiro/Documents/programming/personal/change-my-player)
+2017-10-23 22:32:42.463  INFO 79871 --- [main] c.c.c.ChangeMyPlayerApplication          : No active profile set, falling back to default profiles: default
+2017-10-23 22:32:42.728  INFO 79871 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35e2d654: startup date [Mon Oct 23 22:32:42 BRST 2017]; root of context hierarchy
+2017-10-23 22:32:43.492  INFO 79871 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-23 22:32:43.564  INFO 79871 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$bc4d7679] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-23 22:32:43.632  INFO 79871 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-10-23 22:32:44.182  INFO 79871 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-23 22:32:44.204  INFO 79871 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-23 22:32:44.206  INFO 79871 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-23 22:32:44.347  INFO 79871 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-23 22:32:44.347  INFO 79871 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1622 ms
+2017-10-23 22:32:44.532  INFO 79871 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-23 22:32:44.534  INFO 79871 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2017-10-23 22:32:44.538  INFO 79871 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-23 22:32:44.538  INFO 79871 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-23 22:32:44.539  INFO 79871 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-23 22:32:44.539  INFO 79871 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-23 22:32:44.656  WARN 79871 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.model.spotify.Spotify contains validation constraints but had not been annotated with @Validated.
+2017-10-23 22:32:44.657  WARN 79871 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.model.spotify.Spotify contains validation constraints but had not been annotated with @Validated.
+2017-10-23 22:32:44.657  WARN 79871 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.model.spotify.Spotify contains validation constraints but had not been annotated with @Validated.
+2017-10-23 22:32:44.680  WARN 79871 --- [main] c.c.c.model.spotify.Spotify              : Id: 1d56a48289a646a788a69a44418c6768
+2017-10-23 22:32:44.680  WARN 79871 --- [main] c.c.c.model.spotify.Spotify              : Secret: 666c5bddec4f4347b15c81f6055c4684
+2017-10-23 22:32:44.680  WARN 79871 --- [main] c.c.c.model.spotify.Spotify              : Redirect Url: http://localhost:8080/
+2017-10-23 22:32:44.988  INFO 79871 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35e2d654: startup date [Mon Oct 23 22:32:42 BRST 2017]; root of context hierarchy
+2017-10-23 22:32:45.068  INFO 79871 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spotify/auth]}" onto public java.lang.String com.cmp.changemyplayer.controller.SpotifyController.authenticate()
+2017-10-23 22:32:45.073  INFO 79871 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-23 22:32:45.074  INFO 79871 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-23 22:32:45.112  INFO 79871 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 22:32:45.112  INFO 79871 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 22:32:45.166  INFO 79871 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 22:32:45.219  WARN 79871 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-10-23 22:32:45.725  INFO 79871 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2017-10-23 22:32:45.961  INFO 79871 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-23 22:32:46.048  INFO 79871 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-23 22:32:46.055  INFO 79871 --- [main] c.c.c.ChangeMyPlayerApplication          : Started ChangeMyPlayerApplication in 13.962 seconds (JVM running for 19.584)
+2017-10-23 22:32:53.891  INFO 79871 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-23 22:32:53.891  INFO 79871 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-23 22:32:53.907  INFO 79871 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2017-10-23 23:03:06.461  INFO 79871 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-10-23 23:03:06.463  INFO 79871 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35e2d654: startup date [Mon Oct 23 22:32:42 BRST 2017]; root of context hierarchy
+2017-10-23 23:03:06.466  INFO 79871 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-10-23 23:03:51.230  INFO 80475 --- [main] c.c.c.ChangeMyPlayerApplication          : Starting ChangeMyPlayerApplication on Thiagos-MacBook-Pro.local with PID 80475 (/Users/thiagocarneiro/Documents/programming/personal/change-my-player/target/classes started by thiagocarneiro in /Users/thiagocarneiro/Documents/programming/personal/change-my-player)
+2017-10-23 23:03:51.234  INFO 80475 --- [main] c.c.c.ChangeMyPlayerApplication          : No active profile set, falling back to default profiles: default
+2017-10-23 23:03:51.509  INFO 80475 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:03:51 BRST 2017]; root of context hierarchy
+2017-10-23 23:03:52.252  INFO 80475 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-23 23:03:52.342  INFO 80475 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$665238fb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-23 23:03:52.395  INFO 80475 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-10-23 23:03:52.891  INFO 80475 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-23 23:03:52.914  INFO 80475 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-23 23:03:52.915  INFO 80475 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-23 23:03:53.057  INFO 80475 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-23 23:03:53.058  INFO 80475 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1553 ms
+2017-10-23 23:03:53.255  INFO 80475 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-23 23:03:53.256  INFO 80475 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2017-10-23 23:03:53.259  INFO 80475 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-23 23:03:53.261  INFO 80475 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-23 23:03:53.261  INFO 80475 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-23 23:03:53.261  INFO 80475 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-23 23:03:53.389  WARN 80475 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:03:53.389  WARN 80475 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:03:53.390  WARN 80475 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:03:53.419  WARN 80475 --- [main] c.c.c.account.SpotifyAccount             : Id: 1d56a48289a646a788a69a44418c6768
+2017-10-23 23:03:53.420  WARN 80475 --- [main] c.c.c.account.SpotifyAccount             : Secret: 666c5bddec4f4347b15c81f6055c4684
+2017-10-23 23:03:53.420  WARN 80475 --- [main] c.c.c.account.SpotifyAccount             : Redirect Url: http://localhost:8080/
+2017-10-23 23:03:53.420  WARN 80475 --- [main] c.c.c.account.SpotifyAccount             : Authorization Url: https://accounts.spotify.com:443/authorize?client_id={0}&response_type=code&redirect_uri={1}&scope={2}&state={3}
+2017-10-23 23:03:53.429  WARN 80475 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'spotifyController': Unsatisfied dependency expressed through field 'spotifyAuthorizer'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.cmp.changemyplayer.account.SpotifyAuthorizer' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2017-10-23 23:03:53.434  INFO 80475 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-10-23 23:03:53.447  INFO 80475 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-10-23 23:03:53.537 ERROR 80475 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field spotifyAuthorizer in com.cmp.changemyplayer.controller.SpotifyController required a bean of type 'com.cmp.changemyplayer.account.SpotifyAuthorizer' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.cmp.changemyplayer.account.SpotifyAuthorizer' in your configuration.
+
+2017-10-23 23:04:50.483  INFO 80494 --- [main] c.c.c.ChangeMyPlayerApplication          : Starting ChangeMyPlayerApplication on Thiagos-MacBook-Pro.local with PID 80494 (/Users/thiagocarneiro/Documents/programming/personal/change-my-player/target/classes started by thiagocarneiro in /Users/thiagocarneiro/Documents/programming/personal/change-my-player)
+2017-10-23 23:04:50.486  INFO 80494 --- [main] c.c.c.ChangeMyPlayerApplication          : No active profile set, falling back to default profiles: default
+2017-10-23 23:04:50.774  INFO 80494 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:04:50 BRST 2017]; root of context hierarchy
+2017-10-23 23:04:51.497  INFO 80494 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-23 23:04:51.588  INFO 80494 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$298f3c3a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-23 23:04:51.645  INFO 80494 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-10-23 23:04:52.157  INFO 80494 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-23 23:04:52.172  INFO 80494 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-23 23:04:52.174  INFO 80494 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-23 23:04:52.325  INFO 80494 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-23 23:04:52.327  INFO 80494 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1556 ms
+2017-10-23 23:04:52.511  INFO 80494 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-23 23:04:52.513  INFO 80494 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2017-10-23 23:04:52.521  INFO 80494 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-23 23:04:52.522  INFO 80494 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-23 23:04:52.522  INFO 80494 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-23 23:04:52.522  INFO 80494 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-23 23:04:52.679  WARN 80494 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:04:52.680  WARN 80494 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:04:52.680  WARN 80494 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:04:52.720  WARN 80494 --- [main] c.c.c.account.SpotifyAccount             : Id: 1d56a48289a646a788a69a44418c6768
+2017-10-23 23:04:52.720  WARN 80494 --- [main] c.c.c.account.SpotifyAccount             : Secret: 666c5bddec4f4347b15c81f6055c4684
+2017-10-23 23:04:52.720  WARN 80494 --- [main] c.c.c.account.SpotifyAccount             : Redirect Url: http://localhost:8080/
+2017-10-23 23:04:52.720  WARN 80494 --- [main] c.c.c.account.SpotifyAccount             : Authorization Url: https://accounts.spotify.com:443/authorize?client_id={0}&response_type=code&redirect_uri={1}&scope={2}&state={3}
+2017-10-23 23:04:53.051  INFO 80494 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:04:50 BRST 2017]; root of context hierarchy
+2017-10-23 23:04:53.147  INFO 80494 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spotify/auth]}" onto public java.lang.String com.cmp.changemyplayer.controller.SpotifyController.authenticate()
+2017-10-23 23:04:53.151  INFO 80494 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-23 23:04:53.152  INFO 80494 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-23 23:04:53.203  INFO 80494 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:04:53.204  INFO 80494 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:04:53.263  INFO 80494 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:04:53.322  WARN 80494 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-10-23 23:04:53.783  INFO 80494 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2017-10-23 23:04:53.973  INFO 80494 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-23 23:04:54.049  INFO 80494 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-23 23:04:54.056  INFO 80494 --- [main] c.c.c.ChangeMyPlayerApplication          : Started ChangeMyPlayerApplication in 13.957 seconds (JVM running for 19.503)
+2017-10-23 23:06:15.214  INFO 80494 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-23 23:06:15.215  INFO 80494 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-23 23:06:15.238  INFO 80494 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2017-10-23 23:16:11.442  INFO 80494 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-10-23 23:16:11.443  INFO 80494 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:04:50 BRST 2017]; root of context hierarchy
+2017-10-23 23:16:11.445  INFO 80494 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-10-23 23:16:37.942  INFO 80738 --- [main] c.c.c.ChangeMyPlayerApplication          : Starting ChangeMyPlayerApplication on Thiagos-MacBook-Pro.local with PID 80738 (/Users/thiagocarneiro/Documents/programming/personal/change-my-player/target/classes started by thiagocarneiro in /Users/thiagocarneiro/Documents/programming/personal/change-my-player)
+2017-10-23 23:16:37.945  INFO 80738 --- [main] c.c.c.ChangeMyPlayerApplication          : No active profile set, falling back to default profiles: default
+2017-10-23 23:16:38.209  INFO 80738 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:16:38 BRST 2017]; root of context hierarchy
+2017-10-23 23:16:38.974  INFO 80738 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-23 23:16:39.065  INFO 80738 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f5427094] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-23 23:16:39.116  INFO 80738 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-10-23 23:16:39.639  INFO 80738 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-23 23:16:39.655  INFO 80738 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-23 23:16:39.656  INFO 80738 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-23 23:16:39.801  INFO 80738 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-23 23:16:39.802  INFO 80738 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1596 ms
+2017-10-23 23:16:39.992  INFO 80738 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-23 23:16:39.995  INFO 80738 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2017-10-23 23:16:40.000  INFO 80738 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-23 23:16:40.001  INFO 80738 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-23 23:16:40.001  INFO 80738 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-23 23:16:40.002  INFO 80738 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-23 23:16:40.151  WARN 80738 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:16:40.152  WARN 80738 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:16:40.152  WARN 80738 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:16:40.189  WARN 80738 --- [main] c.c.c.account.SpotifyAccount             : Id: 1d56a48289a646a788a69a44418c6768
+2017-10-23 23:16:40.190  WARN 80738 --- [main] c.c.c.account.SpotifyAccount             : Secret: 666c5bddec4f4347b15c81f6055c4684
+2017-10-23 23:16:40.190  WARN 80738 --- [main] c.c.c.account.SpotifyAccount             : Redirect Url: http://localhost:8080/
+2017-10-23 23:16:40.190  WARN 80738 --- [main] c.c.c.account.SpotifyAccount             : Authorization Url: https://accounts.spotify.com:443/authorize?client_id={0}&response_type=code&redirect_uri={1}&scope={2}&state={3}
+2017-10-23 23:16:40.514  INFO 80738 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:16:38 BRST 2017]; root of context hierarchy
+2017-10-23 23:16:40.588  INFO 80738 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spotify/code]}" onto public java.lang.String com.cmp.changemyplayer.controller.SpotifyController.getCode(java.lang.String,java.lang.String,java.lang.String)
+2017-10-23 23:16:40.590  INFO 80738 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spotify/auth]}" onto public java.lang.String com.cmp.changemyplayer.controller.SpotifyController.authenticate()
+2017-10-23 23:16:40.592  INFO 80738 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-23 23:16:40.593  INFO 80738 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-23 23:16:40.632  INFO 80738 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:16:40.632  INFO 80738 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:16:40.689  INFO 80738 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:16:40.740  WARN 80738 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-10-23 23:16:41.220  INFO 80738 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2017-10-23 23:16:41.428  INFO 80738 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-23 23:16:41.507  INFO 80738 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-23 23:16:41.514  INFO 80738 --- [main] c.c.c.ChangeMyPlayerApplication          : Started ChangeMyPlayerApplication in 13.94 seconds (JVM running for 19.54)
+2017-10-23 23:16:45.961  INFO 80738 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-23 23:16:45.961  INFO 80738 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-23 23:16:45.979  INFO 80738 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2017-10-23 23:21:25.047  INFO 80738 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-10-23 23:21:25.050  INFO 80738 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:16:38 BRST 2017]; root of context hierarchy
+2017-10-23 23:21:25.058  INFO 80738 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-10-23 23:21:43.548  INFO 80856 --- [main] c.c.c.ChangeMyPlayerApplication          : Starting ChangeMyPlayerApplication on Thiagos-MacBook-Pro.local with PID 80856 (/Users/thiagocarneiro/Documents/programming/personal/change-my-player/target/classes started by thiagocarneiro in /Users/thiagocarneiro/Documents/programming/personal/change-my-player)
+2017-10-23 23:21:43.551  INFO 80856 --- [main] c.c.c.ChangeMyPlayerApplication          : No active profile set, falling back to default profiles: default
+2017-10-23 23:21:43.915  INFO 80856 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:21:43 BRST 2017]; root of context hierarchy
+2017-10-23 23:21:44.829  INFO 80856 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-23 23:21:44.929  INFO 80856 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$575a666e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-23 23:21:45.017  INFO 80856 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-10-23 23:21:45.705  INFO 80856 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-23 23:21:45.727  INFO 80856 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-23 23:21:45.729  INFO 80856 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-23 23:21:45.882  INFO 80856 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-23 23:21:45.883  INFO 80856 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1973 ms
+2017-10-23 23:21:46.122  INFO 80856 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-23 23:21:46.123  INFO 80856 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2017-10-23 23:21:46.127  INFO 80856 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-23 23:21:46.128  INFO 80856 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-23 23:21:46.129  INFO 80856 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-23 23:21:46.129  INFO 80856 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-23 23:21:46.407  WARN 80856 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:21:46.407  WARN 80856 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:21:46.408  WARN 80856 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:21:46.449  WARN 80856 --- [main] c.c.c.account.SpotifyAccount             : Id: 1d56a48289a646a788a69a44418c6768
+2017-10-23 23:21:46.449  WARN 80856 --- [main] c.c.c.account.SpotifyAccount             : Secret: 666c5bddec4f4347b15c81f6055c4684
+2017-10-23 23:21:46.450  WARN 80856 --- [main] c.c.c.account.SpotifyAccount             : Redirect Url: http://localhost:8080/
+2017-10-23 23:21:46.450  WARN 80856 --- [main] c.c.c.account.SpotifyAccount             : Authorization Url: https://accounts.spotify.com:443/authorize?client_id={0}&response_type=code&redirect_uri={1}&scope={2}&state={3}
+2017-10-23 23:21:47.275  INFO 80856 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:21:43 BRST 2017]; root of context hierarchy
+2017-10-23 23:21:47.512  INFO 80856 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spotify/code]}" onto public java.lang.String com.cmp.changemyplayer.controller.SpotifyController.getCode(java.lang.String,java.lang.String,java.lang.String)
+2017-10-23 23:21:47.514  INFO 80856 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spotify/auth]}" onto public java.lang.String com.cmp.changemyplayer.controller.SpotifyController.authenticate()
+2017-10-23 23:21:47.517  INFO 80856 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-23 23:21:47.518  INFO 80856 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-23 23:21:47.600  INFO 80856 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:21:47.601  INFO 80856 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:21:47.712  INFO 80856 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:21:47.802  WARN 80856 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-10-23 23:21:48.643  INFO 80856 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2017-10-23 23:21:49.015  INFO 80856 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-23 23:21:49.157  INFO 80856 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-23 23:21:49.166  INFO 80856 --- [main] c.c.c.ChangeMyPlayerApplication          : Started ChangeMyPlayerApplication in 15.999 seconds (JVM running for 21.556)
+2017-10-23 23:22:35.202  INFO 80856 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-10-23 23:22:35.203  INFO 80856 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:21:43 BRST 2017]; root of context hierarchy
+2017-10-23 23:22:35.205  INFO 80856 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-10-23 23:22:51.773  INFO 80881 --- [main] c.c.c.ChangeMyPlayerApplication          : Starting ChangeMyPlayerApplication on Thiagos-MacBook-Pro.local with PID 80881 (/Users/thiagocarneiro/Documents/programming/personal/change-my-player/target/classes started by thiagocarneiro in /Users/thiagocarneiro/Documents/programming/personal/change-my-player)
+2017-10-23 23:22:51.776  INFO 80881 --- [main] c.c.c.ChangeMyPlayerApplication          : No active profile set, falling back to default profiles: default
+2017-10-23 23:22:52.059  INFO 80881 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:22:52 BRST 2017]; root of context hierarchy
+2017-10-23 23:22:52.861  INFO 80881 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-23 23:22:52.969  INFO 80881 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$bc4d7679] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-23 23:22:53.030  INFO 80881 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-10-23 23:22:53.573  INFO 80881 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-23 23:22:53.589  INFO 80881 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-23 23:22:53.591  INFO 80881 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-23 23:22:53.728  INFO 80881 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-23 23:22:53.729  INFO 80881 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1675 ms
+2017-10-23 23:22:53.942  INFO 80881 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-23 23:22:53.944  INFO 80881 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2017-10-23 23:22:53.948  INFO 80881 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-23 23:22:53.949  INFO 80881 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-23 23:22:53.950  INFO 80881 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-23 23:22:53.950  INFO 80881 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-23 23:22:54.082  WARN 80881 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:22:54.082  WARN 80881 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:22:54.082  WARN 80881 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:22:54.113  WARN 80881 --- [main] c.c.c.account.SpotifyAccount             : Id: 1d56a48289a646a788a69a44418c6768
+2017-10-23 23:22:54.114  WARN 80881 --- [main] c.c.c.account.SpotifyAccount             : Secret: 666c5bddec4f4347b15c81f6055c4684
+2017-10-23 23:22:54.114  WARN 80881 --- [main] c.c.c.account.SpotifyAccount             : Redirect Url: http://localhost:8080/
+2017-10-23 23:22:54.114  WARN 80881 --- [main] c.c.c.account.SpotifyAccount             : Authorization Url: https://accounts.spotify.com:443/authorize?client_id={0}&response_type=code&redirect_uri={1}&scope={2}&state={3}
+2017-10-23 23:22:54.467  INFO 80881 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:22:52 BRST 2017]; root of context hierarchy
+2017-10-23 23:22:54.555  INFO 80881 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spotify/code]}" onto public java.lang.String com.cmp.changemyplayer.controller.SpotifyController.getCode(java.lang.String,java.lang.String,java.lang.String)
+2017-10-23 23:22:54.557  INFO 80881 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spotify/auth]}" onto public java.lang.String com.cmp.changemyplayer.controller.SpotifyController.authenticate()
+2017-10-23 23:22:54.560  INFO 80881 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-23 23:22:54.561  INFO 80881 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-23 23:22:54.607  INFO 80881 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:22:54.607  INFO 80881 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:22:54.674  INFO 80881 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:22:54.733  WARN 80881 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-10-23 23:22:55.221  INFO 80881 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2017-10-23 23:22:55.438  INFO 80881 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-23 23:22:55.513  INFO 80881 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-23 23:22:55.519  INFO 80881 --- [main] c.c.c.ChangeMyPlayerApplication          : Started ChangeMyPlayerApplication in 14.109 seconds (JVM running for 19.66)
+2017-10-23 23:23:01.350  INFO 80881 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-23 23:23:01.350  INFO 80881 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-23 23:23:01.365  INFO 80881 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2017-10-23 23:23:48.613  INFO 80881 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-10-23 23:23:48.613  INFO 80881 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:22:52 BRST 2017]; root of context hierarchy
+2017-10-23 23:23:48.615  INFO 80881 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-10-23 23:24:05.115  INFO 80906 --- [main] c.c.c.ChangeMyPlayerApplication          : Starting ChangeMyPlayerApplication on Thiagos-MacBook-Pro.local with PID 80906 (/Users/thiagocarneiro/Documents/programming/personal/change-my-player/target/classes started by thiagocarneiro in /Users/thiagocarneiro/Documents/programming/personal/change-my-player)
+2017-10-23 23:24:05.119  INFO 80906 --- [main] c.c.c.ChangeMyPlayerApplication          : No active profile set, falling back to default profiles: default
+2017-10-23 23:24:05.393  INFO 80906 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:24:05 BRST 2017]; root of context hierarchy
+2017-10-23 23:24:06.132  INFO 80906 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-23 23:24:06.218  INFO 80906 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$1dc910c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-23 23:24:06.271  INFO 80906 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-10-23 23:24:06.767  INFO 80906 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-23 23:24:06.781  INFO 80906 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-23 23:24:06.782  INFO 80906 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-23 23:24:06.911  INFO 80906 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-23 23:24:06.915  INFO 80906 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1525 ms
+2017-10-23 23:24:07.097  INFO 80906 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-23 23:24:07.099  INFO 80906 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2017-10-23 23:24:07.103  INFO 80906 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-23 23:24:07.104  INFO 80906 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-23 23:24:07.105  INFO 80906 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-23 23:24:07.105  INFO 80906 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-23 23:24:07.226  WARN 80906 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:24:07.226  WARN 80906 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:24:07.227  WARN 80906 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:24:07.253  WARN 80906 --- [main] c.c.c.account.SpotifyAccount             : Id: 1d56a48289a646a788a69a44418c6768
+2017-10-23 23:24:07.253  WARN 80906 --- [main] c.c.c.account.SpotifyAccount             : Secret: 666c5bddec4f4347b15c81f6055c4684
+2017-10-23 23:24:07.253  WARN 80906 --- [main] c.c.c.account.SpotifyAccount             : Redirect Url: http://localhost:8080/
+2017-10-23 23:24:07.253  WARN 80906 --- [main] c.c.c.account.SpotifyAccount             : Authorization Url: https://accounts.spotify.com:443/authorize?client_id={0}&response_type=code&redirect_uri={1}&scope={2}&state={3}
+2017-10-23 23:24:07.621  INFO 80906 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:24:05 BRST 2017]; root of context hierarchy
+2017-10-23 23:24:07.702  INFO 80906 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spotify/code]}" onto public java.lang.String com.cmp.changemyplayer.controller.SpotifyController.getCode(java.lang.String,java.lang.String,java.lang.String)
+2017-10-23 23:24:07.703  INFO 80906 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spotify/auth]}" onto public java.lang.String com.cmp.changemyplayer.controller.SpotifyController.authenticate()
+2017-10-23 23:24:07.708  INFO 80906 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-23 23:24:07.708  INFO 80906 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-23 23:24:07.765  INFO 80906 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:24:07.765  INFO 80906 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:24:07.850  WARN 80906 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-10-23 23:24:08.336  INFO 80906 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2017-10-23 23:24:08.559  INFO 80906 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-23 23:24:08.633  INFO 80906 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-23 23:24:08.640  INFO 80906 --- [main] c.c.c.ChangeMyPlayerApplication          : Started ChangeMyPlayerApplication in 13.886 seconds (JVM running for 19.435)
+2017-10-23 23:24:23.746  INFO 80906 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-23 23:24:23.746  INFO 80906 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-23 23:24:23.767  INFO 80906 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2017-10-23 23:25:29.863  INFO 80906 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-10-23 23:25:29.865  INFO 80906 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:24:05 BRST 2017]; root of context hierarchy
+2017-10-23 23:25:29.867  INFO 80906 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-10-23 23:25:46.351  INFO 80943 --- [main] c.c.c.ChangeMyPlayerApplication          : Starting ChangeMyPlayerApplication on Thiagos-MacBook-Pro.local with PID 80943 (/Users/thiagocarneiro/Documents/programming/personal/change-my-player/target/classes started by thiagocarneiro in /Users/thiagocarneiro/Documents/programming/personal/change-my-player)
+2017-10-23 23:25:46.353  INFO 80943 --- [main] c.c.c.ChangeMyPlayerApplication          : No active profile set, falling back to default profiles: default
+2017-10-23 23:25:46.643  INFO 80943 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:25:46 BRST 2017]; root of context hierarchy
+2017-10-23 23:25:47.657  INFO 80943 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-23 23:25:47.740  INFO 80943 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8e7ec240] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-23 23:25:47.790  INFO 80943 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-10-23 23:25:48.342  INFO 80943 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-23 23:25:48.361  INFO 80943 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-23 23:25:48.362  INFO 80943 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-23 23:25:48.541  INFO 80943 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-23 23:25:48.542  INFO 80943 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1903 ms
+2017-10-23 23:25:48.765  INFO 80943 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-23 23:25:48.767  INFO 80943 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2017-10-23 23:25:48.770  INFO 80943 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-23 23:25:48.771  INFO 80943 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-23 23:25:48.772  INFO 80943 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-23 23:25:48.772  INFO 80943 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-23 23:25:48.903  WARN 80943 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:25:48.904  WARN 80943 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:25:48.904  WARN 80943 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:25:48.946  WARN 80943 --- [main] c.c.c.account.SpotifyAccount             : Id: 1d56a48289a646a788a69a44418c6768
+2017-10-23 23:25:48.947  WARN 80943 --- [main] c.c.c.account.SpotifyAccount             : Secret: 666c5bddec4f4347b15c81f6055c4684
+2017-10-23 23:25:48.947  WARN 80943 --- [main] c.c.c.account.SpotifyAccount             : Redirect Url: http://localhost:8080/
+2017-10-23 23:25:48.947  WARN 80943 --- [main] c.c.c.account.SpotifyAccount             : Authorization Url: https://accounts.spotify.com:443/authorize?client_id={0}&response_type=code&redirect_uri={1}&scope={2}&state={3}
+2017-10-23 23:25:49.269  INFO 80943 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:25:46 BRST 2017]; root of context hierarchy
+2017-10-23 23:25:49.364  INFO 80943 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spotify/code]}" onto public java.lang.String com.cmp.changemyplayer.controller.SpotifyController.getCode(java.lang.String,java.lang.String,java.lang.String)
+2017-10-23 23:25:49.366  INFO 80943 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spotify/auth]}" onto public java.lang.String com.cmp.changemyplayer.controller.SpotifyController.authenticate()
+2017-10-23 23:25:49.369  INFO 80943 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-23 23:25:49.369  INFO 80943 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-23 23:25:49.406  INFO 80943 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:25:49.406  INFO 80943 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:25:49.509  WARN 80943 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-10-23 23:25:50.075  INFO 80943 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2017-10-23 23:25:50.305  INFO 80943 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-23 23:25:50.379  INFO 80943 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-23 23:25:50.385  INFO 80943 --- [main] c.c.c.ChangeMyPlayerApplication          : Started ChangeMyPlayerApplication in 14.396 seconds (JVM running for 19.967)
+2017-10-23 23:26:02.209  INFO 80943 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-23 23:26:02.210  INFO 80943 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-23 23:26:02.231  INFO 80943 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2017-10-23 23:29:08.644  INFO 81025 --- [main] c.c.c.ChangeMyPlayerApplicationTests     : Starting ChangeMyPlayerApplicationTests on Thiagos-MacBook-Pro.local with PID 81025 (started by thiagocarneiro in /Users/thiagocarneiro/Documents/programming/personal/change-my-player)
+2017-10-23 23:29:08.646  INFO 81025 --- [main] c.c.c.ChangeMyPlayerApplicationTests     : No active profile set, falling back to default profiles: default
+2017-10-23 23:29:08.920  INFO 81025 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@235ecd9f: startup date [Mon Oct 23 23:29:08 BRST 2017]; root of context hierarchy
+2017-10-23 23:29:09.836  INFO 81025 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-23 23:29:09.907  INFO 81025 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8932ac71] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-23 23:29:10.017  INFO 81025 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-10-23 23:29:10.270  WARN 81025 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:29:10.276  WARN 81025 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:29:10.276  WARN 81025 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:29:10.311  WARN 81025 --- [main] c.c.c.account.SpotifyAccount             : Id: 1d56a48289a646a788a69a44418c6768
+2017-10-23 23:29:10.311  WARN 81025 --- [main] c.c.c.account.SpotifyAccount             : Secret: 666c5bddec4f4347b15c81f6055c4684
+2017-10-23 23:29:10.311  WARN 81025 --- [main] c.c.c.account.SpotifyAccount             : Redirect Url: http://localhost:8080/
+2017-10-23 23:29:10.311  WARN 81025 --- [main] c.c.c.account.SpotifyAccount             : Authorization Url: https://accounts.spotify.com:443/authorize?client_id={0}&response_type=code&redirect_uri={1}&scope={2}&state={3}
+2017-10-23 23:29:10.989  INFO 81025 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@235ecd9f: startup date [Mon Oct 23 23:29:08 BRST 2017]; root of context hierarchy
+2017-10-23 23:29:11.101  INFO 81025 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spotify/code]}" onto public java.lang.String com.cmp.changemyplayer.controller.SpotifyController.getCode(java.lang.String,java.lang.String,java.lang.String)
+2017-10-23 23:29:11.103  INFO 81025 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spotify/auth]}" onto public java.lang.String com.cmp.changemyplayer.controller.SpotifyController.authenticate()
+2017-10-23 23:29:11.106  INFO 81025 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-23 23:29:11.107  INFO 81025 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-23 23:29:11.178  INFO 81025 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:29:11.179  INFO 81025 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:29:11.280  INFO 81025 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:29:11.330  WARN 81025 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-10-23 23:29:11.675  INFO 81025 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2017-10-23 23:29:11.906  INFO 81025 --- [main] c.c.c.ChangeMyPlayerApplicationTests     : Started ChangeMyPlayerApplicationTests in 13.653 seconds (JVM running for 14.599)
+2017-10-23 23:29:11.967  INFO 81025 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@235ecd9f: startup date [Mon Oct 23 23:29:08 BRST 2017]; root of context hierarchy
+2017-10-23 23:29:35.047  INFO 81050 --- [main] c.c.c.ChangeMyPlayerApplicationTests     : Starting ChangeMyPlayerApplicationTests on Thiagos-MacBook-Pro.local with PID 81050 (started by thiagocarneiro in /Users/thiagocarneiro/Documents/programming/personal/change-my-player)
+2017-10-23 23:29:35.049  INFO 81050 --- [main] c.c.c.ChangeMyPlayerApplicationTests     : No active profile set, falling back to default profiles: default
+2017-10-23 23:29:35.343  INFO 81050 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@235ecd9f: startup date [Mon Oct 23 23:29:35 BRST 2017]; root of context hierarchy
+2017-10-23 23:29:36.266  INFO 81050 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-23 23:29:36.357  INFO 81050 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8932ac71] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-23 23:29:36.435  INFO 81050 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-10-23 23:29:36.656  WARN 81050 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:29:36.660  WARN 81050 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:29:36.660  WARN 81050 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:29:36.698  WARN 81050 --- [main] c.c.c.account.SpotifyAccount             : Id: 1d56a48289a646a788a69a44418c6768
+2017-10-23 23:29:36.698  WARN 81050 --- [main] c.c.c.account.SpotifyAccount             : Secret: 666c5bddec4f4347b15c81f6055c4684
+2017-10-23 23:29:36.699  WARN 81050 --- [main] c.c.c.account.SpotifyAccount             : Redirect Url: http://localhost:8080/
+2017-10-23 23:29:36.700  WARN 81050 --- [main] c.c.c.account.SpotifyAccount             : Authorization Url: https://accounts.spotify.com:443/authorize?client_id={0}&response_type=code&redirect_uri={1}&scope={2}&state={3}
+2017-10-23 23:29:37.279  INFO 81050 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@235ecd9f: startup date [Mon Oct 23 23:29:35 BRST 2017]; root of context hierarchy
+2017-10-23 23:29:37.385  INFO 81050 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spotify/auth]}" onto public java.lang.String com.cmp.changemyplayer.controller.SpotifyController.authenticate()
+2017-10-23 23:29:37.387  INFO 81050 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spotify/code]}" onto public java.lang.String com.cmp.changemyplayer.controller.SpotifyController.getCode(java.lang.String,java.lang.String,java.lang.String)
+2017-10-23 23:29:37.390  INFO 81050 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-23 23:29:37.391  INFO 81050 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-23 23:29:37.461  INFO 81050 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:29:37.461  INFO 81050 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:29:37.546  INFO 81050 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:29:37.628  WARN 81050 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-10-23 23:29:38.020  INFO 81050 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2017-10-23 23:29:38.266  INFO 81050 --- [main] c.c.c.ChangeMyPlayerApplicationTests     : Started ChangeMyPlayerApplicationTests in 13.621 seconds (JVM running for 14.525)
+2017-10-23 23:29:38.339  INFO 81050 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@235ecd9f: startup date [Mon Oct 23 23:29:35 BRST 2017]; root of context hierarchy
+2017-10-23 23:29:42.743  INFO 80943 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-10-23 23:29:42.744  INFO 80943 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:25:46 BRST 2017]; root of context hierarchy
+2017-10-23 23:29:42.746  INFO 80943 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-10-23 23:29:59.453  INFO 81059 --- [main] c.c.c.ChangeMyPlayerApplication          : Starting ChangeMyPlayerApplication on Thiagos-MacBook-Pro.local with PID 81059 (/Users/thiagocarneiro/Documents/programming/personal/change-my-player/target/classes started by thiagocarneiro in /Users/thiagocarneiro/Documents/programming/personal/change-my-player)
+2017-10-23 23:29:59.456  INFO 81059 --- [main] c.c.c.ChangeMyPlayerApplication          : No active profile set, falling back to default profiles: default
+2017-10-23 23:29:59.712  INFO 81059 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:29:59 BRST 2017]; root of context hierarchy
+2017-10-23 23:30:00.513  INFO 81059 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-23 23:30:00.601  INFO 81059 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f5427094] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-23 23:30:00.654  INFO 81059 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-10-23 23:30:01.168  INFO 81059 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-10-23 23:30:01.184  INFO 81059 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-23 23:30:01.185  INFO 81059 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-23 23:30:01.341  INFO 81059 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-23 23:30:01.342  INFO 81059 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1635 ms
+2017-10-23 23:30:01.549  INFO 81059 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-23 23:30:01.550  INFO 81059 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2017-10-23 23:30:01.554  INFO 81059 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-23 23:30:01.555  INFO 81059 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-23 23:30:01.555  INFO 81059 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-23 23:30:01.555  INFO 81059 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-23 23:30:01.705  WARN 81059 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:30:01.706  WARN 81059 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:30:01.707  WARN 81059 --- [main] figurationPropertiesBindingPostProcessor : The @ConfigurationProperties bean class com.cmp.changemyplayer.account.SpotifyAccount contains validation constraints but had not been annotated with @Validated.
+2017-10-23 23:30:01.742  WARN 81059 --- [main] c.c.c.account.SpotifyAccount             : Id: 1d56a48289a646a788a69a44418c6768
+2017-10-23 23:30:01.743  WARN 81059 --- [main] c.c.c.account.SpotifyAccount             : Secret: 666c5bddec4f4347b15c81f6055c4684
+2017-10-23 23:30:01.743  WARN 81059 --- [main] c.c.c.account.SpotifyAccount             : Redirect Url: http://localhost:8080/
+2017-10-23 23:30:01.743  WARN 81059 --- [main] c.c.c.account.SpotifyAccount             : Authorization Url: https://accounts.spotify.com:443/authorize?client_id={0}&response_type=code&redirect_uri={1}&scope={2}&state={3}
+2017-10-23 23:30:02.107  INFO 81059 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cf0e0ba: startup date [Mon Oct 23 23:29:59 BRST 2017]; root of context hierarchy
+2017-10-23 23:30:02.200  INFO 81059 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spotify/code]}" onto public java.lang.String com.cmp.changemyplayer.controller.SpotifyController.getCode(java.lang.String,java.lang.String,java.lang.String)
+2017-10-23 23:30:02.202  INFO 81059 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spotify/auth]}" onto public java.lang.String com.cmp.changemyplayer.controller.SpotifyController.authenticate()
+2017-10-23 23:30:02.204  INFO 81059 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-23 23:30:02.205  INFO 81059 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-23 23:30:02.248  INFO 81059 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:30:02.248  INFO 81059 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:30:02.305  INFO 81059 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-23 23:30:02.369  WARN 81059 --- [main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-10-23 23:30:02.833  INFO 81059 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2017-10-23 23:30:03.044  INFO 81059 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-23 23:30:03.113  INFO 81059 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-10-23 23:30:03.120  INFO 81059 --- [main] c.c.c.ChangeMyPlayerApplication          : Started ChangeMyPlayerApplication in 14.029 seconds (JVM running for 19.608)
+2017-10-23 23:30:08.777  INFO 81059 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-23 23:30:08.777  INFO 81059 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-23 23:30:08.803  INFO 81059 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms

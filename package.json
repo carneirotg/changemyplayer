@@ -1,0 +1,14 @@
+{
+  "name": "change-my-player",
+  "version": "1.0.0",
+  "description": "A migration platform to jump to/from Deezer to/from Spotify",
+  "main": "index.js",
+  "repository": "https://github.com/carneirotg/changemyplayer.git",
+  "author": "Thiago Carneiro <carneirotg@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}

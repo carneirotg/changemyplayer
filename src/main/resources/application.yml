@@ -1,0 +1,7 @@
+app:
+    player:
+        spotify:
+            id: 1d56a48289a646a788a69a44418c6768
+            secret: 666c5bddec4f4347b15c81f6055c4684
+            redirect-url: http://localhost:8080/
+            authorization-url: https://accounts.spotify.com:443/authorize?client_id={0}&response_type=code&redirect_uri={1}&scope={2}&state={3}
